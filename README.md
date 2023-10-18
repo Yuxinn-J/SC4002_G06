@@ -1,0 +1,2 @@
+# SC4002_G06
+AY23S1 SC4002 NLP Assignment
