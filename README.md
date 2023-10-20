@@ -11,3 +11,6 @@ ddl :  Friday, 10th November at 11:59pm SGT.
 - [ ] a README.txt which gives instructions to run the
 code and explanations of sample output obtained from your code
 - [ ] source code
+
+## Installation
+`conda env create -f environment.yml`
