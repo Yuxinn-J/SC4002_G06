@@ -1,0 +1,1 @@
+Locate the pretrained model for inference purpose to this folder.
