@@ -18,7 +18,8 @@ report link: https://docs.google.com/document/d/1qBZas2v0KKjPzQvZUZvywNPm29flcqt
     2. [ ] metrics double check + debug
     3. [ ] try different models: linear, FFN, RNN, LSTM, Transformer... explore SOTA method
     4. [ ] hyperparameter tuning for selected model 
-    5. TBD
+    5. [ ] Zero-shot NER using ChatGPT ([e.g.](https://github.com/ritun16/TestingLLM/blob/main/NER_ChatGPT/ChatGPT_NER.ipynb))
+    6. [ ] TBD...
   - [ ] part 2:
   - [ ] inference UI?
 
