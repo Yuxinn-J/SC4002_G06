@@ -14,14 +14,14 @@ report link: https://docs.google.com/document/d/1qBZas2v0KKjPzQvZUZvywNPm29flcqt
 
 - [ ] source code
   - [ ] part 1:
-    1. [ ] code clean up, pack into modules
-    2. [ ] metrics double check + debug
-    3. [ ] try different models: linear, FFN, RNN, LSTM, Transformer... explore SOTA method
-    4. [ ] hyperparameter tuning for selected model 
-    5. [ ] Zero-shot NER using ChatGPT ([e.g.](https://github.com/ritun16/TestingLLM/blob/main/NER_ChatGPT/ChatGPT_NER.ipynb))
-    6. [ ] TBD...
+    1. [X] code clean up, pack into modules
+    2. [X] metrics double check + debug
+    3. [X] try different models: linear, FFN, RNN, LSTM, Transformer... 
+    4. [ ] explore SOTA method
+    5. [ ] hyperparameter tuning for selected model 
+    6. [ ] Zero-shot NER using ChatGPT 
+    7. [ ] Ensemble? ==> final version, save model, inference script
   - [ ] part 2:
-  - [ ] inference UI?
 
 
 ## Installation
