@@ -1,39 +1,24 @@
-<div align="center">
-  <h1>AY23S1 SC4002 NLP Assignment - G06</h1>
-</div>
-
-# TODO
-- Part 1
- - [ ] hyperparameter tuning results + final model + code clean
- - [ ] README.txt
- - [ ] report
-
-# Installation
+## Installation
 `conda env create -f environment.yml`
 
-# Quick inference
-## Part 1
+## Quick inference
 - Inference! Simply run the following command.
 ```
 
 ```
 - Evaluation
   - Sample Output. Results will be saved in .
-## Part 2
 
 ## Submission Files
 
 ```
-NER
-│   Part1_1.ipynb
-│   Part1_2.ipynb                                  
-|   Part1_3_Models.ipynb                        // pretrain baseline on CelebA
-|   Part1_3_Tuning.ipynb                          // find optimal depth
-│   Part1_3_Final.ipynb                       // final model
-|   hyperparameter_tuning_results.json
-|   inference.py                            // inference code + evaluation test
-|
-Question_Classification
+Levi_Hassner_Baseline
+│   Levi_hassner.ipynb
+│   Levi_hassner-Age.ipynb                                   
+|   Levi_hassner-CelebA.ipynb                          // pretrain baseline on CelebA
+|   Levi_hassner-depth.ipynb                           // find optimal depth
+│  
+Classic_CNN_models
 |   VGG16-Adience.ipynb										
 |   ResNet101-Adience.ipynb								      
 |   InceptionV3-Adience.ipynb									
