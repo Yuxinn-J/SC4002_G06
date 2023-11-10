@@ -64,10 +64,10 @@ NER
 |   best_model.pth                                // best model weight
 |
 Question_Classification
-|   part2.ipynb																		// Train and test models
-|   part2_fine_tune.py								      			// Fine-tune transformers under different settings
-|   start_transformers.sh													// Script to run the transformers training tasks
-|   Transformers_log.out								 					// Transformers training log file
+|   part2.ipynb                                   // Train and test models
+|   part2_fine_tune.py                            // Fine-tune transformers under different settings
+|   start_transformers.sh                         // Script to run the transformers training tasks
+|   Transformers_log.out                          // Transformers training log file
 |   
 └─── model_weights_transformers                   // weights of tranformers 
 |
