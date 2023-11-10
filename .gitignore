@@ -3,3 +3,6 @@
 venv/
 .python-version
 models/
+*.model
+*.pth
+*.npy

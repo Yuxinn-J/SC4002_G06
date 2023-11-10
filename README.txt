@@ -13,7 +13,7 @@ Alternatively, ensure you have the following prerequisites installed for inferen
 - For **one-shot** mode, pass a sentence as an argument:
   ```
   cd NER
-  python inference.py "OpenAI is a research laboratory in San Francisco, California."
+  python inference.py "European Union rejects German call to boycott British lamb."
   ```
   - The output will display NER tags for each token in the input sentence.
 - For **interactive** mode, invoke the script with the --interactive flag:
@@ -23,8 +23,9 @@ Alternatively, ensure you have the following prerequisites installed for inferen
   ```
   - The script will prompt you to enter sentences one by one and will output the predicted tags for each, until you type `exit`.
 - Notes:
-  - Make sure best_model.pth is the correct name and path of your saved model.
-  - Ensure the local word2vec model file is correctly placed and accessible by the script.
+  - Make sure best_model_bilstm.pth is the correct name and path of your saved model.
+  - Save the Word2Vec model locally  to speed up future usage.
+
 
 ## Part 2
 
@@ -38,6 +39,7 @@ NER
 │   Part1_3_Tuning.ipynb                          // Optimal BiLSTM setting discovery
 │   Part1_3_Final.ipynb                           // Final model training and testing
 │   hyperparameter_tuning_results.json            // Results of hyper-parameter tuning
+│   train.py                                      // Train code
 │   inference.py                                  // Inference code
 |
 Question_Classification
@@ -52,7 +54,7 @@ Question_Classification
       └─ EfficientNetB5-Gender-Age.ipynb              // consider age and gender simultaneously
 │
 pretrained_models                                                
-│   ViT-Adience.ipynb
+│   best_model_bilstm.pth                                // best model weight for Part1-NER
 │   CLIP_Zero-shot-Adience.ipynb
 │   
 

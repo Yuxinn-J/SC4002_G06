@@ -1141,5 +1141,275 @@
         "num_layers": 2,
         "final_epoch": 15,
         "f1_score": 0.8212220266532562
+    },
+    {
+        "learning_rate": 0.01,
+        "batch_size": 16,
+        "optimizer": "RMSprop",
+        "hidden_dim": 512,
+        "num_layers": 2,
+        "final_epoch": 23,
+        "f1_score": 0.5614393784502146
+    },
+    {
+        "learning_rate": 0.01,
+        "batch_size": 16,
+        "optimizer": "SGD",
+        "hidden_dim": 512,
+        "num_layers": 3,
+        "final_epoch": 4,
+        "f1_score": 0.0
+    },
+    {
+        "learning_rate": 0.01,
+        "batch_size": 16,
+        "optimizer": "Adagrad",
+        "hidden_dim": 512,
+        "num_layers": 3,
+        "final_epoch": 12,
+        "f1_score": 0.8814446038309003
+    },
+    {
+        "learning_rate": 0.01,
+        "batch_size": 16,
+        "optimizer": "Adam",
+        "hidden_dim": 512,
+        "num_layers": 3,
+        "final_epoch": 10,
+        "f1_score": 0.7717249193759261
+    },
+    {
+        "learning_rate": 0.01,
+        "batch_size": 16,
+        "optimizer": "RMSprop",
+        "hidden_dim": 512,
+        "num_layers": 3,
+        "final_epoch": 5,
+        "f1_score": 0.03869047619047619
+    },
+    {
+        "learning_rate": 0.001,
+        "batch_size": 16,
+        "optimizer": "SGD",
+        "hidden_dim": 512,
+        "num_layers": 1,
+        "final_epoch": 4,
+        "f1_score": 0.0
+    },
+    {
+        "learning_rate": 0.001,
+        "batch_size": 16,
+        "optimizer": "Adagrad",
+        "hidden_dim": 512,
+        "num_layers": 1,
+        "final_epoch": 35,
+        "f1_score": 0.8096287506357009
+    },
+    {
+        "learning_rate": 0.001,
+        "batch_size": 16,
+        "optimizer": "Adam",
+        "hidden_dim": 512,
+        "num_layers": 1,
+        "final_epoch": 8,
+        "f1_score": 0.8849303503588012
+    },
+    {
+        "learning_rate": 0.001,
+        "batch_size": 16,
+        "optimizer": "RMSprop",
+        "hidden_dim": 512,
+        "num_layers": 1,
+        "final_epoch": 8,
+        "f1_score": 0.8890771968477248
+    },
+    {
+        "learning_rate": 0.001,
+        "batch_size": 16,
+        "optimizer": "SGD",
+        "hidden_dim": 512,
+        "num_layers": 2,
+        "final_epoch": 4,
+        "f1_score": 0.0
+    },
+    {
+        "learning_rate": 0.001,
+        "batch_size": 16,
+        "optimizer": "Adagrad",
+        "hidden_dim": 512,
+        "num_layers": 2,
+        "final_epoch": 28,
+        "f1_score": 0.8289776113050141
+    },
+    {
+        "learning_rate": 0.001,
+        "batch_size": 16,
+        "optimizer": "Adam",
+        "hidden_dim": 512,
+        "num_layers": 2,
+        "final_epoch": 23,
+        "f1_score": 0.8979281183932346
+    },
+    {
+        "learning_rate": 0.001,
+        "batch_size": 16,
+        "optimizer": "RMSprop",
+        "hidden_dim": 512,
+        "num_layers": 2,
+        "final_epoch": 15,
+        "f1_score": 0.9001274968125796
+    },
+    {
+        "learning_rate": 0.001,
+        "batch_size": 16,
+        "optimizer": "SGD",
+        "hidden_dim": 512,
+        "num_layers": 3,
+        "final_epoch": 4,
+        "f1_score": 0.0
+    },
+    {
+        "learning_rate": 0.001,
+        "batch_size": 16,
+        "optimizer": "Adagrad",
+        "hidden_dim": 512,
+        "num_layers": 3,
+        "final_epoch": 49,
+        "f1_score": 0.8423636979343042
+    },
+    {
+        "learning_rate": 0.001,
+        "batch_size": 16,
+        "optimizer": "Adam",
+        "hidden_dim": 512,
+        "num_layers": 3,
+        "final_epoch": 11,
+        "f1_score": 0.8998660415271266
+    },
+    {
+        "learning_rate": 0.001,
+        "batch_size": 16,
+        "optimizer": "RMSprop",
+        "hidden_dim": 512,
+        "num_layers": 3,
+        "final_epoch": 10,
+        "f1_score": 0.8994072819644369
+    },
+    {
+        "learning_rate": 0.0001,
+        "batch_size": 16,
+        "optimizer": "SGD",
+        "hidden_dim": 512,
+        "num_layers": 1,
+        "final_epoch": 4,
+        "f1_score": 0.0
+    },
+    {
+        "learning_rate": 0.0001,
+        "batch_size": 16,
+        "optimizer": "Adagrad",
+        "hidden_dim": 512,
+        "num_layers": 1,
+        "final_epoch": 4,
+        "f1_score": 0.0
+    },
+    {
+        "learning_rate": 0.0001,
+        "batch_size": 16,
+        "optimizer": "Adam",
+        "hidden_dim": 512,
+        "num_layers": 1,
+        "final_epoch": 21,
+        "f1_score": 0.8488018899763753
+    },
+    {
+        "learning_rate": 0.0001,
+        "batch_size": 16,
+        "optimizer": "RMSprop",
+        "hidden_dim": 512,
+        "num_layers": 1,
+        "final_epoch": 15,
+        "f1_score": 0.8459450288428911
+    },
+    {
+        "learning_rate": 0.0001,
+        "batch_size": 16,
+        "optimizer": "SGD",
+        "hidden_dim": 512,
+        "num_layers": 2,
+        "final_epoch": 4,
+        "f1_score": 0.0
+    },
+    {
+        "learning_rate": 0.0001,
+        "batch_size": 16,
+        "optimizer": "Adagrad",
+        "hidden_dim": 512,
+        "num_layers": 2,
+        "final_epoch": 49,
+        "f1_score": 0.5612926521032677
+    },
+    {
+        "learning_rate": 0.0001,
+        "batch_size": 16,
+        "optimizer": "Adam",
+        "hidden_dim": 512,
+        "num_layers": 2,
+        "final_epoch": 39,
+        "f1_score": 0.862718932443703
+    },
+    {
+        "learning_rate": 0.0001,
+        "batch_size": 16,
+        "optimizer": "RMSprop",
+        "hidden_dim": 512,
+        "num_layers": 2,
+        "final_epoch": 21,
+        "f1_score": 0.8718339686573485
+    },
+    {
+        "learning_rate": 0.0001,
+        "batch_size": 16,
+        "optimizer": "SGD",
+        "hidden_dim": 512,
+        "num_layers": 3,
+        "final_epoch": 4,
+        "f1_score": 0.0
+    },
+    {
+        "learning_rate": 0.0001,
+        "batch_size": 16,
+        "optimizer": "Adagrad",
+        "hidden_dim": 512,
+        "num_layers": 3,
+        "final_epoch": 49,
+        "f1_score": 0.512024407753051
+    },
+    {
+        "learning_rate": 0.0001,
+        "batch_size": 16,
+        "optimizer": "Adam",
+        "hidden_dim": 512,
+        "num_layers": 3,
+        "final_epoch": 30,
+        "f1_score": 0.8840604026845638
+    },
+    {
+        "learning_rate": 0.0001,
+        "batch_size": 16,
+        "optimizer": "RMSprop",
+        "hidden_dim": 512,
+        "num_layers": 3,
+        "final_epoch": 16,
+        "f1_score": 0.8716658278812279
+    },
+    {
+        "learning_rate": 0.1,
+        "batch_size": 32,
+        "optimizer": "SGD",
+        "hidden_dim": 128,
+        "num_layers": 1,
+        "final_epoch": 28,
+        "f1_score": 0.7944074791543839
     }
 ]

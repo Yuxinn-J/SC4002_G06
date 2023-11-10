@@ -13,21 +13,23 @@ Alternatively, ensure you have the following prerequisites installed for inferen
 
 # Quick inference
 ## Part 1
+- Download pre-trained models: `best_model_bilstm.pth` 
+  ```
+  wget https://github.com/Yuxinn-J/SC4002_G06/releases/download/v1/best_model_bilstm.pth -P pretrained_models
+  ```
 - For **one-shot** mode, pass a sentence as an argument:
   ```
-  cd NER
-  python inference.py "OpenAI is a research laboratory in San Francisco, California."
+  python NER/inference.py "European Union rejects German call to boycott British lamb."
   ```
   - The output will display NER tags for each token in the input sentence.
 - For **interactive** mode, invoke the script with the --interactive flag:
   ```
-  cd NER
-  python inference.py --interactive
+  python NER/inference.py --interactive
   ```
   - The script will prompt you to enter sentences one by one and will output the predicted tags for each, until you type `exit`.
 - Notes:
-  - Make sure best_model.pth is the correct name and path of your saved model.
-  - Ensure the local word2vec model file is correctly placed and accessible by the script.
+  - Make sure `./pretrained_models/best_model_bilstm.pth` is the correct name and path of your saved model.
+  - Save the Word2Vec model locally  to speed up future usage.
 
 ## Part 2
 
@@ -42,7 +44,9 @@ NER
 │   Part1_3_Tuning.ipynb                          // Optimal BiLSTM setting discovery
 │   Part1_3_Final.ipynb                           // Final model training and testing
 │   hyperparameter_tuning_results.json            // Results of hyper-parameter tuning
+│   train.py                                      // Train code (quite messy...)
 │   inference.py                                  // Inference code
+|   best_model.pth                                // best model weight
 |
 Question_Classification
 |   VGG16-Adience.ipynb										

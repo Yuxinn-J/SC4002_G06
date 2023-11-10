@@ -12,8 +12,10 @@ args = parser.parse_args()
 
 
 # Download the embeddings
-print("Load word2vec embedding...")
-w2v = gensim.models.KeyedVectors.load('word2vec-google-news-300.model', mmap='r')
+print("Downloading word2vec embedding...")
+# w2v = gensim.models.KeyedVectors.load('word2vec-google-news-300.model', mmap='r')
+w2v = gensim.downloader.load('word2vec-google-news-300')
+
 
 word2idx = w2v.key_to_index
 word2idx['<UNK>'] = len(word2idx)
@@ -62,8 +64,8 @@ def sentence_to_indices(sentence, vocab):
 # Load the model
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 print("Load pre-trained checkpoint...")
-model_checkpoint_path = '/mnt/lustre/yuxin/SC4002_G06/NER/best_model_8522.pth'  
-model = BiLSTMNERModel(embedding_dim=w2v[0].shape[0], hidden_dim=256, num_of_layers=3, output_dim=len(tag2idx))
+model_checkpoint_path = './pretrained_models/best_model_bilstm.pth'  
+model = BiLSTMNERModel(embedding_dim=w2v[0].shape[0], hidden_dim=512, num_of_layers=2, output_dim=len(tag2idx))
 model.load_state_dict(torch.load(model_checkpoint_path, map_location=device))
 model.to(device)
 model.eval()
@@ -84,8 +86,15 @@ def inference(sentence, model, device):
     # Convert index to tags
     predicted_tags = idx_to_tags(predictions)
 
+    # aligned_output = "\n".join([f"{token}: {tag}" for token, tag in zip(tokens, predicted_tags)])
     # Prepare aligned output
-    aligned_output = "\n".join([f"{token}: {tag}" for token, tag in zip(tokens, predicted_tags)])
+    token_line = ""
+    tag_line = ""
+    for token, tag in zip(tokens, predicted_tags):
+        space_padding = max(len(token), len(tag)) + 2  # +2 to add some space between words for better readability
+        token_line += token.ljust(space_padding)
+        tag_line += tag.ljust(space_padding)
+    aligned_output = token_line + "\n" + tag_line
     return aligned_output
 
 # Interactive loop for user input
