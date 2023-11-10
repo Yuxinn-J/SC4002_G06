@@ -34,7 +34,21 @@ Alternatively, ensure you have the following prerequisites installed for inferen
 
 ## Part 2
 
+- To train and test seven different models on Question_Classification task.
+
+> \* part2.ipynb
+
+- To fine-tune the transformers under different settings.
+
+```
+chmod a+x start_transformers.sh
+./start_transformers.sh
+```
+
+\* You may need to activate a Python virtual environment and adjust the path to align with the relevant files as necessary.
+
 # Submission Files
+
 The directory structure is outlined below, with individual files for different parts of the assignment:
 
 ```
@@ -50,21 +64,16 @@ NER
 |   best_model.pth                                // best model weight
 |
 Question_Classification
-|   VGG16-Adience.ipynb										
-|   ResNet101-Adience.ipynb								      
-|   InceptionV3-Adience.ipynb									
-|   EfficientNetB5-Adience.ipynb								 
+|   part2.ipynb																		// Train and test models
+|   part2_fine_tune.py								      			// Fine-tune transformers under different settings
+|   start_transformers.sh													// Script to run the transformers training tasks
+|   Transformers_log.out								 					// Transformers training log file
 |   
-└───Explore_EfficientNet                              // explore EfficientNet variations 
-      ├─ EfficientNetB5-Hyperpara_Tuning.ipynb
-      ├─ EfficientNetB5-CelebA.ipynb
-      └─ EfficientNetB5-Gender-Age.ipynb              // consider age and gender simultaneously
-│
-pretrained_models                                                
-│   ViT-Adience.ipynb
-│   CLIP_Zero-shot-Adience.ipynb
-│   
-
+└─── model_weights_transformers                   // weights of tranformers 
+|
+datasets
+│─── CoNLL2003
+│─── TREC
+|
+archive
 ```
-
-# Final Model
