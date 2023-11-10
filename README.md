@@ -27,6 +27,7 @@ Alternatively, ensure you have the following prerequisites installed for inferen
   python NER/inference.py --interactive
   ```
   - The script will prompt you to enter sentences one by one and will output the predicted tags for each, until you type `exit`.
+  - ![image](https://github.com/Yuxinn-J/SC4002_G06/assets/73170270/5869c062-987e-43c3-8d28-663fc71137e7)
 - Notes:
   - Make sure `./pretrained_models/best_model_bilstm.pth` is the correct name and path of your saved model.
   - Save the Word2Vec model locally  to speed up future usage.
