@@ -313,8 +313,5 @@ for epoch in range(MAX_EPOCHS):
 total_train_time = time.time() - total_start_time
 print(f"Total training time: {total_train_time}s")
 
-# Example of saving the model (assuming your model variable is named 'model')
 torch.save(model.state_dict(), 'model.pth')
 print('Model saved successfully!')
-
-# Make sure to replace 'model' with the actual variable name of your model in the script
