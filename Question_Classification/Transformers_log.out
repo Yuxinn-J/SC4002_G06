@@ -1,0 +1,1248 @@
+/p/scratch/ccstdl/xu17/miniconda3/envs/jz/lib/python3.11/site-packages/torch/nn/modules/transformer.py:282: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
+  warnings.warn(f"enable_nested_tensor is True, but self.use_nested_tensor is False because {why_not_sparsity_fast_path}")
+/p/scratch/ccstdl/xu17/miniconda3/envs/jz/lib/python3.11/site-packages/torch/nn/modules/transformer.py:282: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
+  warnings.warn(f"enable_nested_tensor is True, but self.use_nested_tensor is False because {why_not_sparsity_fast_path}")
+word2idx['<UNK>']: 3000000
+word2idx['<PAD>']: 3000001
+----------------------------------------------------------------------------------------------------
+Training with NUM_HEADS: 6, HIDDEN_LAYERS: 3, LR: 0.0001
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Train Starts: 
+
+DataParallel(
+  (module): QuestionClassifierModel6(
+    (embedding): Embedding(3000002, 300, padding_idx=3000001)
+    (transformer_encoder): TransformerEncoder(
+      (layers): ModuleList(
+        (0-2): 3 x TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=300, out_features=300, bias=True)
+          )
+          (linear1): Linear(in_features=300, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=300, bias=True)
+          (norm1): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+    (output): Linear(in_features=300, out_features=5, bias=True)
+  )
+)
+
+----------------------------------------------------------------------------------------------------
+Early stopping after 77 epochs with no improvement.
+Total training time: 512.73 seconds.
+----------------------------------------------------------------------------------------------------
+Total training time: 512.73 seconds.
+Final Results:
+Train Loss: 0.9270
+Dev Loss: 1.0146
+Train Accuracy: 64.38%
+Dev Accuracy: 56.00%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Test Starts: 
+
+----------------------------------------------------------------------------------------------------
+Test Loss: 1.0686, Test Accuracy: 57.00%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Training with NUM_HEADS: 6, HIDDEN_LAYERS: 3, LR: 0.001
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Train Starts: 
+
+DataParallel(
+  (module): QuestionClassifierModel6(
+    (embedding): Embedding(3000002, 300, padding_idx=3000001)
+    (transformer_encoder): TransformerEncoder(
+      (layers): ModuleList(
+        (0-2): 3 x TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=300, out_features=300, bias=True)
+          )
+          (linear1): Linear(in_features=300, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=300, bias=True)
+          (norm1): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+    (output): Linear(in_features=300, out_features=5, bias=True)
+  )
+)
+
+----------------------------------------------------------------------------------------------------
+Early stopping after 14 epochs with no improvement.
+Total training time: 91.95 seconds.
+----------------------------------------------------------------------------------------------------
+Total training time: 91.95 seconds.
+Final Results:
+Train Loss: 1.3977
+Dev Loss: 1.4162
+Train Accuracy: 38.17%
+Dev Accuracy: 39.00%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Test Starts: 
+
+----------------------------------------------------------------------------------------------------
+Test Loss: 1.4507, Test Accuracy: 35.00%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Training with NUM_HEADS: 6, HIDDEN_LAYERS: 3, LR: 0.01
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Train Starts: 
+
+DataParallel(
+  (module): QuestionClassifierModel6(
+    (embedding): Embedding(3000002, 300, padding_idx=3000001)
+    (transformer_encoder): TransformerEncoder(
+      (layers): ModuleList(
+        (0-2): 3 x TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=300, out_features=300, bias=True)
+          )
+          (linear1): Linear(in_features=300, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=300, bias=True)
+          (norm1): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+    (output): Linear(in_features=300, out_features=5, bias=True)
+  )
+)
+
+----------------------------------------------------------------------------------------------------
+Early stopping after 11 epochs with no improvement.
+Total training time: 72.27 seconds.
+----------------------------------------------------------------------------------------------------
+Total training time: 72.27 seconds.
+Final Results:
+Train Loss: 1.3986
+Dev Loss: 1.4144
+Train Accuracy: 38.17%
+Dev Accuracy: 39.00%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Test Starts: 
+
+----------------------------------------------------------------------------------------------------
+Test Loss: 1.4459, Test Accuracy: 35.00%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Training with NUM_HEADS: 6, HIDDEN_LAYERS: 4, LR: 0.0001
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Train Starts: 
+
+DataParallel(
+  (module): QuestionClassifierModel6(
+    (embedding): Embedding(3000002, 300, padding_idx=3000001)
+    (transformer_encoder): TransformerEncoder(
+      (layers): ModuleList(
+        (0-3): 4 x TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=300, out_features=300, bias=True)
+          )
+          (linear1): Linear(in_features=300, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=300, bias=True)
+          (norm1): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+    (output): Linear(in_features=300, out_features=5, bias=True)
+  )
+)
+
+----------------------------------------------------------------------------------------------------
+Early stopping after 66 epochs with no improvement.
+Total training time: 506.87 seconds.
+----------------------------------------------------------------------------------------------------
+Total training time: 506.87 seconds.
+Final Results:
+Train Loss: 0.9571
+Dev Loss: 0.9707
+Train Accuracy: 63.89%
+Dev Accuracy: 61.80%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Test Starts: 
+
+----------------------------------------------------------------------------------------------------
+Test Loss: 0.9451, Test Accuracy: 63.00%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Training with NUM_HEADS: 6, HIDDEN_LAYERS: 4, LR: 0.001
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Train Starts: 
+
+DataParallel(
+  (module): QuestionClassifierModel6(
+    (embedding): Embedding(3000002, 300, padding_idx=3000001)
+    (transformer_encoder): TransformerEncoder(
+      (layers): ModuleList(
+        (0-3): 4 x TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=300, out_features=300, bias=True)
+          )
+          (linear1): Linear(in_features=300, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=300, bias=True)
+          (norm1): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+    (output): Linear(in_features=300, out_features=5, bias=True)
+  )
+)
+
+----------------------------------------------------------------------------------------------------
+Early stopping after 12 epochs with no improvement.
+Total training time: 91.96 seconds.
+----------------------------------------------------------------------------------------------------
+Total training time: 91.96 seconds.
+Final Results:
+Train Loss: 1.4010
+Dev Loss: 1.4066
+Train Accuracy: 38.17%
+Dev Accuracy: 39.00%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Test Starts: 
+
+----------------------------------------------------------------------------------------------------
+Test Loss: 1.4348, Test Accuracy: 35.00%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Training with NUM_HEADS: 6, HIDDEN_LAYERS: 4, LR: 0.01
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Train Starts: 
+
+DataParallel(
+  (module): QuestionClassifierModel6(
+    (embedding): Embedding(3000002, 300, padding_idx=3000001)
+    (transformer_encoder): TransformerEncoder(
+      (layers): ModuleList(
+        (0-3): 4 x TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=300, out_features=300, bias=True)
+          )
+          (linear1): Linear(in_features=300, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=300, bias=True)
+          (norm1): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+    (output): Linear(in_features=300, out_features=5, bias=True)
+  )
+)
+
+----------------------------------------------------------------------------------------------------
+Early stopping after 11 epochs with no improvement.
+Total training time: 84.20 seconds.
+----------------------------------------------------------------------------------------------------
+Total training time: 84.20 seconds.
+Final Results:
+Train Loss: 1.3968
+Dev Loss: 1.4232
+Train Accuracy: 38.17%
+Dev Accuracy: 39.00%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Test Starts: 
+
+----------------------------------------------------------------------------------------------------
+Test Loss: 1.4544, Test Accuracy: 35.00%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Training with NUM_HEADS: 6, HIDDEN_LAYERS: 5, LR: 0.0001
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Train Starts: 
+
+DataParallel(
+  (module): QuestionClassifierModel6(
+    (embedding): Embedding(3000002, 300, padding_idx=3000001)
+    (transformer_encoder): TransformerEncoder(
+      (layers): ModuleList(
+        (0-4): 5 x TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=300, out_features=300, bias=True)
+          )
+          (linear1): Linear(in_features=300, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=300, bias=True)
+          (norm1): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+    (output): Linear(in_features=300, out_features=5, bias=True)
+  )
+)
+
+----------------------------------------------------------------------------------------------------
+Early stopping after 76 epochs with no improvement.
+Total training time: 663.70 seconds.
+----------------------------------------------------------------------------------------------------
+Total training time: 663.70 seconds.
+Final Results:
+Train Loss: 0.9431
+Dev Loss: 0.9811
+Train Accuracy: 63.61%
+Dev Accuracy: 60.20%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Test Starts: 
+
+----------------------------------------------------------------------------------------------------
+Test Loss: 1.0638, Test Accuracy: 55.20%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Training with NUM_HEADS: 6, HIDDEN_LAYERS: 5, LR: 0.001
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Train Starts: 
+
+DataParallel(
+  (module): QuestionClassifierModel6(
+    (embedding): Embedding(3000002, 300, padding_idx=3000001)
+    (transformer_encoder): TransformerEncoder(
+      (layers): ModuleList(
+        (0-4): 5 x TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=300, out_features=300, bias=True)
+          )
+          (linear1): Linear(in_features=300, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=300, bias=True)
+          (norm1): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+    (output): Linear(in_features=300, out_features=5, bias=True)
+  )
+)
+
+----------------------------------------------------------------------------------------------------
+Early stopping after 13 epochs with no improvement.
+Total training time: 113.14 seconds.
+----------------------------------------------------------------------------------------------------
+Total training time: 113.14 seconds.
+Final Results:
+Train Loss: 1.3980
+Dev Loss: 1.4045
+Train Accuracy: 38.17%
+Dev Accuracy: 39.00%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Test Starts: 
+
+----------------------------------------------------------------------------------------------------
+Test Loss: 1.4300, Test Accuracy: 35.00%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Training with NUM_HEADS: 6, HIDDEN_LAYERS: 5, LR: 0.01
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Train Starts: 
+
+DataParallel(
+  (module): QuestionClassifierModel6(
+    (embedding): Embedding(3000002, 300, padding_idx=3000001)
+    (transformer_encoder): TransformerEncoder(
+      (layers): ModuleList(
+        (0-4): 5 x TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=300, out_features=300, bias=True)
+          )
+          (linear1): Linear(in_features=300, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=300, bias=True)
+          (norm1): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+    (output): Linear(in_features=300, out_features=5, bias=True)
+  )
+)
+
+----------------------------------------------------------------------------------------------------
+Early stopping after 11 epochs with no improvement.
+Total training time: 95.82 seconds.
+----------------------------------------------------------------------------------------------------
+Total training time: 95.82 seconds.
+Final Results:
+Train Loss: 1.3987
+Dev Loss: 1.4102
+Train Accuracy: 38.17%
+Dev Accuracy: 39.00%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Test Starts: 
+
+----------------------------------------------------------------------------------------------------
+Test Loss: 1.4433, Test Accuracy: 35.00%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Training with NUM_HEADS: 10, HIDDEN_LAYERS: 3, LR: 0.0001
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Train Starts: 
+
+DataParallel(
+  (module): QuestionClassifierModel6(
+    (embedding): Embedding(3000002, 300, padding_idx=3000001)
+    (transformer_encoder): TransformerEncoder(
+      (layers): ModuleList(
+        (0-2): 3 x TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=300, out_features=300, bias=True)
+          )
+          (linear1): Linear(in_features=300, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=300, bias=True)
+          (norm1): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+    (output): Linear(in_features=300, out_features=5, bias=True)
+  )
+)
+
+----------------------------------------------------------------------------------------------------
+Early stopping after 76 epochs with no improvement.
+Total training time: 480.11 seconds.
+----------------------------------------------------------------------------------------------------
+Total training time: 480.11 seconds.
+Final Results:
+Train Loss: 0.9263
+Dev Loss: 0.9936
+Train Accuracy: 63.65%
+Dev Accuracy: 61.20%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Test Starts: 
+
+----------------------------------------------------------------------------------------------------
+Test Loss: 1.0266, Test Accuracy: 60.80%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Training with NUM_HEADS: 10, HIDDEN_LAYERS: 3, LR: 0.001
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Train Starts: 
+
+DataParallel(
+  (module): QuestionClassifierModel6(
+    (embedding): Embedding(3000002, 300, padding_idx=3000001)
+    (transformer_encoder): TransformerEncoder(
+      (layers): ModuleList(
+        (0-2): 3 x TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=300, out_features=300, bias=True)
+          )
+          (linear1): Linear(in_features=300, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=300, bias=True)
+          (norm1): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+    (output): Linear(in_features=300, out_features=5, bias=True)
+  )
+)
+
+----------------------------------------------------------------------------------------------------
+Early stopping after 15 epochs with no improvement.
+Total training time: 94.10 seconds.
+----------------------------------------------------------------------------------------------------
+Total training time: 94.10 seconds.
+Final Results:
+Train Loss: 1.3975
+Dev Loss: 1.4105
+Train Accuracy: 38.17%
+Dev Accuracy: 39.00%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Test Starts: 
+
+----------------------------------------------------------------------------------------------------
+Test Loss: 1.4305, Test Accuracy: 35.00%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Training with NUM_HEADS: 10, HIDDEN_LAYERS: 3, LR: 0.01
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Train Starts: 
+
+DataParallel(
+  (module): QuestionClassifierModel6(
+    (embedding): Embedding(3000002, 300, padding_idx=3000001)
+    (transformer_encoder): TransformerEncoder(
+      (layers): ModuleList(
+        (0-2): 3 x TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=300, out_features=300, bias=True)
+          )
+          (linear1): Linear(in_features=300, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=300, bias=True)
+          (norm1): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+    (output): Linear(in_features=300, out_features=5, bias=True)
+  )
+)
+
+----------------------------------------------------------------------------------------------------
+Early stopping after 11 epochs with no improvement.
+Total training time: 69.08 seconds.
+----------------------------------------------------------------------------------------------------
+Total training time: 69.08 seconds.
+Final Results:
+Train Loss: 1.3958
+Dev Loss: 1.4152
+Train Accuracy: 38.17%
+Dev Accuracy: 39.00%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Test Starts: 
+
+----------------------------------------------------------------------------------------------------
+Test Loss: 1.4564, Test Accuracy: 35.00%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Training with NUM_HEADS: 10, HIDDEN_LAYERS: 4, LR: 0.0001
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Train Starts: 
+
+DataParallel(
+  (module): QuestionClassifierModel6(
+    (embedding): Embedding(3000002, 300, padding_idx=3000001)
+    (transformer_encoder): TransformerEncoder(
+      (layers): ModuleList(
+        (0-3): 4 x TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=300, out_features=300, bias=True)
+          )
+          (linear1): Linear(in_features=300, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=300, bias=True)
+          (norm1): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+    (output): Linear(in_features=300, out_features=5, bias=True)
+  )
+)
+
+----------------------------------------------------------------------------------------------------
+Early stopping after 18 epochs with no improvement.
+Total training time: 117.58 seconds.
+----------------------------------------------------------------------------------------------------
+Total training time: 117.58 seconds.
+Final Results:
+Train Loss: 1.1591
+Dev Loss: 1.1784
+Train Accuracy: 54.36%
+Dev Accuracy: 52.00%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Test Starts: 
+
+----------------------------------------------------------------------------------------------------
+Test Loss: 1.1524, Test Accuracy: 54.40%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Training with NUM_HEADS: 10, HIDDEN_LAYERS: 4, LR: 0.001
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Train Starts: 
+
+DataParallel(
+  (module): QuestionClassifierModel6(
+    (embedding): Embedding(3000002, 300, padding_idx=3000001)
+    (transformer_encoder): TransformerEncoder(
+      (layers): ModuleList(
+        (0-3): 4 x TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=300, out_features=300, bias=True)
+          )
+          (linear1): Linear(in_features=300, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=300, bias=True)
+          (norm1): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+    (output): Linear(in_features=300, out_features=5, bias=True)
+  )
+)
+
+----------------------------------------------------------------------------------------------------
+Early stopping after 11 epochs with no improvement.
+Total training time: 71.94 seconds.
+----------------------------------------------------------------------------------------------------
+Total training time: 71.94 seconds.
+Final Results:
+Train Loss: 1.4000
+Dev Loss: 1.4090
+Train Accuracy: 38.17%
+Dev Accuracy: 39.00%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Test Starts: 
+
+----------------------------------------------------------------------------------------------------
+Test Loss: 1.4380, Test Accuracy: 35.00%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Training with NUM_HEADS: 10, HIDDEN_LAYERS: 4, LR: 0.01
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Train Starts: 
+
+DataParallel(
+  (module): QuestionClassifierModel6(
+    (embedding): Embedding(3000002, 300, padding_idx=3000001)
+    (transformer_encoder): TransformerEncoder(
+      (layers): ModuleList(
+        (0-3): 4 x TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=300, out_features=300, bias=True)
+          )
+          (linear1): Linear(in_features=300, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=300, bias=True)
+          (norm1): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+    (output): Linear(in_features=300, out_features=5, bias=True)
+  )
+)
+
+----------------------------------------------------------------------------------------------------
+Early stopping after 11 epochs with no improvement.
+Total training time: 71.85 seconds.
+----------------------------------------------------------------------------------------------------
+Total training time: 71.85 seconds.
+Final Results:
+Train Loss: 1.3983
+Dev Loss: 1.4358
+Train Accuracy: 38.09%
+Dev Accuracy: 39.00%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Test Starts: 
+
+----------------------------------------------------------------------------------------------------
+Test Loss: 1.4822, Test Accuracy: 35.00%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Training with NUM_HEADS: 10, HIDDEN_LAYERS: 5, LR: 0.0001
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Train Starts: 
+
+DataParallel(
+  (module): QuestionClassifierModel6(
+    (embedding): Embedding(3000002, 300, padding_idx=3000001)
+    (transformer_encoder): TransformerEncoder(
+      (layers): ModuleList(
+        (0-4): 5 x TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=300, out_features=300, bias=True)
+          )
+          (linear1): Linear(in_features=300, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=300, bias=True)
+          (norm1): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+    (output): Linear(in_features=300, out_features=5, bias=True)
+  )
+)
+
+----------------------------------------------------------------------------------------------------
+Early stopping after 77 epochs with no improvement.
+Total training time: 522.63 seconds.
+----------------------------------------------------------------------------------------------------
+Total training time: 522.63 seconds.
+Final Results:
+Train Loss: 0.9455
+Dev Loss: 0.9956
+Train Accuracy: 63.33%
+Dev Accuracy: 63.00%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Test Starts: 
+
+----------------------------------------------------------------------------------------------------
+Test Loss: 1.0653, Test Accuracy: 58.20%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Training with NUM_HEADS: 10, HIDDEN_LAYERS: 5, LR: 0.001
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Train Starts: 
+
+DataParallel(
+  (module): QuestionClassifierModel6(
+    (embedding): Embedding(3000002, 300, padding_idx=3000001)
+    (transformer_encoder): TransformerEncoder(
+      (layers): ModuleList(
+        (0-4): 5 x TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=300, out_features=300, bias=True)
+          )
+          (linear1): Linear(in_features=300, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=300, bias=True)
+          (norm1): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+    (output): Linear(in_features=300, out_features=5, bias=True)
+  )
+)
+
+----------------------------------------------------------------------------------------------------
+Early stopping after 11 epochs with no improvement.
+Total training time: 74.54 seconds.
+----------------------------------------------------------------------------------------------------
+Total training time: 74.54 seconds.
+Final Results:
+Train Loss: 1.3983
+Dev Loss: 1.4059
+Train Accuracy: 38.17%
+Dev Accuracy: 39.00%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Test Starts: 
+
+----------------------------------------------------------------------------------------------------
+Test Loss: 1.4324, Test Accuracy: 35.00%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Training with NUM_HEADS: 10, HIDDEN_LAYERS: 5, LR: 0.01
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Train Starts: 
+
+DataParallel(
+  (module): QuestionClassifierModel6(
+    (embedding): Embedding(3000002, 300, padding_idx=3000001)
+    (transformer_encoder): TransformerEncoder(
+      (layers): ModuleList(
+        (0-4): 5 x TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=300, out_features=300, bias=True)
+          )
+          (linear1): Linear(in_features=300, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=300, bias=True)
+          (norm1): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+    (output): Linear(in_features=300, out_features=5, bias=True)
+  )
+)
+
+----------------------------------------------------------------------------------------------------
+Early stopping after 11 epochs with no improvement.
+Total training time: 74.92 seconds.
+----------------------------------------------------------------------------------------------------
+Total training time: 74.92 seconds.
+Final Results:
+Train Loss: 1.3977
+Dev Loss: 1.4166
+Train Accuracy: 38.17%
+Dev Accuracy: 39.00%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Test Starts: 
+
+----------------------------------------------------------------------------------------------------
+Test Loss: 1.4579, Test Accuracy: 35.00%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Training with NUM_HEADS: 15, HIDDEN_LAYERS: 3, LR: 0.0001
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Train Starts: 
+
+DataParallel(
+  (module): QuestionClassifierModel6(
+    (embedding): Embedding(3000002, 300, padding_idx=3000001)
+    (transformer_encoder): TransformerEncoder(
+      (layers): ModuleList(
+        (0-2): 3 x TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=300, out_features=300, bias=True)
+          )
+          (linear1): Linear(in_features=300, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=300, bias=True)
+          (norm1): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+    (output): Linear(in_features=300, out_features=5, bias=True)
+  )
+)
+
+----------------------------------------------------------------------------------------------------
+Early stopping after 69 epochs with no improvement.
+Total training time: 440.57 seconds.
+----------------------------------------------------------------------------------------------------
+Total training time: 440.57 seconds.
+Final Results:
+Train Loss: 0.9387
+Dev Loss: 0.9907
+Train Accuracy: 63.97%
+Dev Accuracy: 59.40%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Test Starts: 
+
+----------------------------------------------------------------------------------------------------
+Test Loss: 1.0358, Test Accuracy: 56.60%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Training with NUM_HEADS: 15, HIDDEN_LAYERS: 3, LR: 0.001
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Train Starts: 
+
+DataParallel(
+  (module): QuestionClassifierModel6(
+    (embedding): Embedding(3000002, 300, padding_idx=3000001)
+    (transformer_encoder): TransformerEncoder(
+      (layers): ModuleList(
+        (0-2): 3 x TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=300, out_features=300, bias=True)
+          )
+          (linear1): Linear(in_features=300, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=300, bias=True)
+          (norm1): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+    (output): Linear(in_features=300, out_features=5, bias=True)
+  )
+)
+
+----------------------------------------------------------------------------------------------------
+Early stopping after 18 epochs with no improvement.
+Total training time: 114.19 seconds.
+----------------------------------------------------------------------------------------------------
+Total training time: 114.19 seconds.
+Final Results:
+Train Loss: 1.3950
+Dev Loss: 1.4223
+Train Accuracy: 38.17%
+Dev Accuracy: 39.00%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Test Starts: 
+
+----------------------------------------------------------------------------------------------------
+Test Loss: 1.4707, Test Accuracy: 35.00%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Training with NUM_HEADS: 15, HIDDEN_LAYERS: 3, LR: 0.01
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Train Starts: 
+
+DataParallel(
+  (module): QuestionClassifierModel6(
+    (embedding): Embedding(3000002, 300, padding_idx=3000001)
+    (transformer_encoder): TransformerEncoder(
+      (layers): ModuleList(
+        (0-2): 3 x TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=300, out_features=300, bias=True)
+          )
+          (linear1): Linear(in_features=300, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=300, bias=True)
+          (norm1): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+    (output): Linear(in_features=300, out_features=5, bias=True)
+  )
+)
+
+----------------------------------------------------------------------------------------------------
+Early stopping after 11 epochs with no improvement.
+Total training time: 69.82 seconds.
+----------------------------------------------------------------------------------------------------
+Total training time: 69.82 seconds.
+Final Results:
+Train Loss: 1.3979
+Dev Loss: 1.4071
+Train Accuracy: 38.17%
+Dev Accuracy: 39.00%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Test Starts: 
+
+----------------------------------------------------------------------------------------------------
+Test Loss: 1.4426, Test Accuracy: 35.00%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Training with NUM_HEADS: 15, HIDDEN_LAYERS: 4, LR: 0.0001
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Train Starts: 
+
+DataParallel(
+  (module): QuestionClassifierModel6(
+    (embedding): Embedding(3000002, 300, padding_idx=3000001)
+    (transformer_encoder): TransformerEncoder(
+      (layers): ModuleList(
+        (0-3): 4 x TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=300, out_features=300, bias=True)
+          )
+          (linear1): Linear(in_features=300, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=300, bias=True)
+          (norm1): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+    (output): Linear(in_features=300, out_features=5, bias=True)
+  )
+)
+
+----------------------------------------------------------------------------------------------------
+Early stopping after 65 epochs with no improvement.
+Total training time: 430.91 seconds.
+----------------------------------------------------------------------------------------------------
+Total training time: 430.91 seconds.
+Final Results:
+Train Loss: 0.9492
+Dev Loss: 0.9738
+Train Accuracy: 63.13%
+Dev Accuracy: 62.20%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Test Starts: 
+
+----------------------------------------------------------------------------------------------------
+Test Loss: 0.9533, Test Accuracy: 61.80%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Training with NUM_HEADS: 15, HIDDEN_LAYERS: 4, LR: 0.001
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Train Starts: 
+
+DataParallel(
+  (module): QuestionClassifierModel6(
+    (embedding): Embedding(3000002, 300, padding_idx=3000001)
+    (transformer_encoder): TransformerEncoder(
+      (layers): ModuleList(
+        (0-3): 4 x TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=300, out_features=300, bias=True)
+          )
+          (linear1): Linear(in_features=300, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=300, bias=True)
+          (norm1): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+    (output): Linear(in_features=300, out_features=5, bias=True)
+  )
+)
+
+----------------------------------------------------------------------------------------------------
+Early stopping after 11 epochs with no improvement.
+Total training time: 72.98 seconds.
+----------------------------------------------------------------------------------------------------
+Total training time: 72.98 seconds.
+Final Results:
+Train Loss: 1.3994
+Dev Loss: 1.4123
+Train Accuracy: 38.17%
+Dev Accuracy: 39.00%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Test Starts: 
+
+----------------------------------------------------------------------------------------------------
+Test Loss: 1.4422, Test Accuracy: 35.00%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Training with NUM_HEADS: 15, HIDDEN_LAYERS: 4, LR: 0.01
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Train Starts: 
+
+DataParallel(
+  (module): QuestionClassifierModel6(
+    (embedding): Embedding(3000002, 300, padding_idx=3000001)
+    (transformer_encoder): TransformerEncoder(
+      (layers): ModuleList(
+        (0-3): 4 x TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=300, out_features=300, bias=True)
+          )
+          (linear1): Linear(in_features=300, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=300, bias=True)
+          (norm1): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+    (output): Linear(in_features=300, out_features=5, bias=True)
+  )
+)
+
+----------------------------------------------------------------------------------------------------
+Early stopping after 11 epochs with no improvement.
+Total training time: 72.93 seconds.
+----------------------------------------------------------------------------------------------------
+Total training time: 72.93 seconds.
+Final Results:
+Train Loss: 1.3982
+Dev Loss: 1.4156
+Train Accuracy: 38.17%
+Dev Accuracy: 39.00%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Test Starts: 
+
+----------------------------------------------------------------------------------------------------
+Test Loss: 1.4476, Test Accuracy: 35.00%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Training with NUM_HEADS: 15, HIDDEN_LAYERS: 5, LR: 0.0001
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Train Starts: 
+
+DataParallel(
+  (module): QuestionClassifierModel6(
+    (embedding): Embedding(3000002, 300, padding_idx=3000001)
+    (transformer_encoder): TransformerEncoder(
+      (layers): ModuleList(
+        (0-4): 5 x TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=300, out_features=300, bias=True)
+          )
+          (linear1): Linear(in_features=300, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=300, bias=True)
+          (norm1): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+    (output): Linear(in_features=300, out_features=5, bias=True)
+  )
+)
+
+----------------------------------------------------------------------------------------------------
+Early stopping after 32 epochs with no improvement.
+Total training time: 220.72 seconds.
+----------------------------------------------------------------------------------------------------
+Total training time: 220.72 seconds.
+Final Results:
+Train Loss: 1.0840
+Dev Loss: 1.0972
+Train Accuracy: 57.84%
+Dev Accuracy: 55.00%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Test Starts: 
+
+----------------------------------------------------------------------------------------------------
+Test Loss: 1.0851, Test Accuracy: 57.20%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Training with NUM_HEADS: 15, HIDDEN_LAYERS: 5, LR: 0.001
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Train Starts: 
+
+DataParallel(
+  (module): QuestionClassifierModel6(
+    (embedding): Embedding(3000002, 300, padding_idx=3000001)
+    (transformer_encoder): TransformerEncoder(
+      (layers): ModuleList(
+        (0-4): 5 x TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=300, out_features=300, bias=True)
+          )
+          (linear1): Linear(in_features=300, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=300, bias=True)
+          (norm1): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+    (output): Linear(in_features=300, out_features=5, bias=True)
+  )
+)
+
+----------------------------------------------------------------------------------------------------
+Early stopping after 12 epochs with no improvement.
+Total training time: 82.87 seconds.
+----------------------------------------------------------------------------------------------------
+Total training time: 82.87 seconds.
+Final Results:
+Train Loss: 1.3999
+Dev Loss: 1.4182
+Train Accuracy: 38.17%
+Dev Accuracy: 39.00%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Test Starts: 
+
+----------------------------------------------------------------------------------------------------
+Test Loss: 1.4432, Test Accuracy: 35.00%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Training with NUM_HEADS: 15, HIDDEN_LAYERS: 5, LR: 0.01
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Train Starts: 
+
+DataParallel(
+  (module): QuestionClassifierModel6(
+    (embedding): Embedding(3000002, 300, padding_idx=3000001)
+    (transformer_encoder): TransformerEncoder(
+      (layers): ModuleList(
+        (0-4): 5 x TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=300, out_features=300, bias=True)
+          )
+          (linear1): Linear(in_features=300, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=300, bias=True)
+          (norm1): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+    (output): Linear(in_features=300, out_features=5, bias=True)
+  )
+)
+
+----------------------------------------------------------------------------------------------------
+Early stopping after 11 epochs with no improvement.
+Total training time: 75.83 seconds.
+----------------------------------------------------------------------------------------------------
+Total training time: 75.83 seconds.
+Final Results:
+Train Loss: 1.4004
+Dev Loss: 1.4265
+Train Accuracy: 38.05%
+Dev Accuracy: 39.00%
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Model Test Starts: 
+
+----------------------------------------------------------------------------------------------------
+Test Loss: 1.4716, Test Accuracy: 35.00%
+----------------------------------------------------------------------------------------------------
