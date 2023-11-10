@@ -64,7 +64,7 @@ def sentence_to_indices(sentence, vocab):
 # Load the model
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 print("Load pre-trained checkpoint...")
-model_checkpoint_path = './pretrained_models/best_model_bilstm.pth'  
+model_checkpoint_path = './NER/best_model_bilstm.pth'  
 model = BiLSTMNERModel(embedding_dim=w2v[0].shape[0], hidden_dim=512, num_of_layers=2, output_dim=len(tag2idx))
 model.load_state_dict(torch.load(model_checkpoint_path, map_location=device))
 model.to(device)

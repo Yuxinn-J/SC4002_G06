@@ -29,21 +29,21 @@ Alternatively, ensure you have the following prerequisites installed for inferen
   - The script will prompt you to enter sentences one by one and will output the predicted tags for each, until you type `exit`.
   - ![image](https://github.com/Yuxinn-J/SC4002_G06/assets/73170270/5869c062-987e-43c3-8d28-663fc71137e7)
 - Notes:
-  - Make sure `./pretrained_models/best_model_bilstm.pth` is the correct name and path of your saved model.
+  - Make sure `./NER/best_model_bilstm.pth` is the correct name and path of your saved model.
   - Save the Word2Vec model locally  to speed up future usage.
 
 ## Part 2
 
 - To train and test seven different models on Question_Classification task.
 
-> \* part2.ipynb
+  > \* part2.ipynb
 
 - To fine-tune the transformers under different settings.
 
-```
-chmod a+x start_transformers.sh
-./start_transformers.sh
-```
+  ```
+  chmod a+x start_transformers.sh
+  ./start_transformers.sh
+  ```
 
 \* You may need to activate a Python virtual environment and adjust the path to align with the relevant files as necessary.
 
@@ -61,7 +61,7 @@ NER
 │   hyperparameter_tuning_results.json            // Results of hyper-parameter tuning
 │   train.py                                      // Train code (quite messy...)
 │   inference.py                                  // Inference code
-|   best_model.pth                                // best model weight
+|   best_model_bilstm.pth                         // best model weight
 |
 Question_Classification
 |   part2.ipynb                                   // Train and test models
