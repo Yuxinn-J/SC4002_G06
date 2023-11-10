@@ -33,7 +33,7 @@ Alternatively, ensure you have the following prerequisites installed for inferen
 
 ## Part 2
 
-## Submission Files
+# Submission Files
 The directory structure is outlined below, with individual files for different parts of the assignment:
 
 ```
@@ -65,3 +65,5 @@ pretrained_models
 │   
 
 ```
+
+# Final Model
